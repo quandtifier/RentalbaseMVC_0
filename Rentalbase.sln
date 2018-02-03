@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rentalbase", "Rentalbase\Rentalbase.csproj", "{BF0FE1DD-2431-401C-9A45-2CEF12B4DABD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rentalbase.Tests", "Rentalbase.Tests\Rentalbase.Tests.csproj", "{55882BB9-67EE-455F-B6ED-7ED23D489369}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BF0FE1DD-2431-401C-9A45-2CEF12B4DABD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF0FE1DD-2431-401C-9A45-2CEF12B4DABD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF0FE1DD-2431-401C-9A45-2CEF12B4DABD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF0FE1DD-2431-401C-9A45-2CEF12B4DABD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55882BB9-67EE-455F-B6ED-7ED23D489369}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55882BB9-67EE-455F-B6ED-7ED23D489369}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55882BB9-67EE-455F-B6ED-7ED23D489369}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55882BB9-67EE-455F-B6ED-7ED23D489369}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F691BBCF-F711-4106-AA90-936B7B7ECF25}
+	EndGlobalSection
+EndGlobal
