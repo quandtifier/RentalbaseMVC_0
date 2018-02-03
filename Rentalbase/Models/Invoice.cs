@@ -18,5 +18,6 @@ namespace Rentalbase.Models
         public string Type { get; set; }
 
         public virtual Property MyProperty { get; set; }
+        public virtual ICollection<InvoiceType> InvoiceType { get; set; }
     }
 }

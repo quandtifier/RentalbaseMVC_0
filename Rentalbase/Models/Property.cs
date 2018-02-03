@@ -23,5 +23,6 @@ namespace Rentalbase.Models
         public virtual ICollection<Invoice> Invoices { get; set; }
         public virtual ICollection<Lease> Leases { get; set; }
         public virtual ICollection<Tenant> Tenants { get; set; }
+        public virtual ICollection<PropertyType> PropertyType { get; set; }
     }
 }
