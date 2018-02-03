@@ -9,7 +9,7 @@ namespace Rentalbase.Models
     {
         public int ID { get; set; }
         public int PropertyID { get; set; }
-        public int TentantID { get; set; }
+        public int TenantID { get; set; }
         public DateTime StartDate { get; set; }
         public int DurationMonths { get; set; }
         public float RateMonthly { get; set; }
