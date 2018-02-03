@@ -15,12 +15,12 @@ namespace Rentalbase.DAL
         }
 
         public DbSet<Property> Properties { get; set; }
-        public DbSet<Landord> Landlords { get; set; }
+        //public DbSet<Landord> Landlords { get; set; }
         public DbSet<Tenant> Tenants { get; set; }
         public DbSet<Lease> Leases { get; set; }
-        public DbSet<Invoice> Invoice { get; set; }
-        public DbSet<PropertyType> PropertyTypes { get; set; }
-        public DbSet<InvoiceType> InvoiceTypes { get; set; }
+        //public DbSet<Invoice> Invoice { get; set; }
+        //public DbSet<PropertyType> PropertyTypes { get; set; }
+        //public DbSet<InvoiceType> InvoiceTypes { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -28,9 +28,9 @@ namespace Rentalbase.DAL
 
             modelBuilder.Entity<Lease>()
                 .HasMany(l => l.Tenants).WithMany(t => t.Leases)
-                .Map(v => v.MapLeftKey("TenantID")
-                .MapRightKey("LeaseID")
-                .ToTable("TenantLease"));
+                .Map(v => v.MapLeftKey("LeaseID")
+                .MapRightKey("TenantID")
+                .ToTable("LeaseTenant"));
         }
     }
 }

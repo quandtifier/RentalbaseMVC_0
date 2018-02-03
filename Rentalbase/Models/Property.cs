@@ -16,11 +16,7 @@ namespace Rentalbase.Models
         public int Zip { get; set; }
         public int Value{ get; set; }
         public string Description { get; set; }
-        [ForeignKey("PropertyType")]
-        public string Type { get; set; }
 
-        public virtual Landord MyLandlord { get; set; }
-        public virtual ICollection<Invoice> Invoices { get; set; }
         public virtual ICollection<Lease> Leases { get; set; }
         public virtual ICollection<Tenant> Tenants { get; set; }
     }
