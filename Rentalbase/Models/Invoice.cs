@@ -8,12 +8,13 @@ namespace Rentalbase.Models
 {
     public class Invoice
     {
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int ID { get; set; }
         public int PropertyID { get; set; }
         public DateTime DateIssued { get; set; }
         public DateTime DatePaid { get; set; }
         public string Description { get; set; }
-        public float Cost { get; set; }
+        public double Cost { get; set; }
         [ForeignKey("InvoiceType")]
         public string Type { get; set; }
 

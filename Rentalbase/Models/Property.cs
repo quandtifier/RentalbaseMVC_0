@@ -8,6 +8,7 @@ namespace Rentalbase.Models
 {
     public class Property
     {
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int ID { get; set; }
         public int LandlordID { get; set; }
         public string Street { get; set; }
